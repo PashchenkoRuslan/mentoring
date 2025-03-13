@@ -1,0 +1,348 @@
+:root {
+  --primary-color: #ffaf18;
+  --secondary-color: #b99150;
+  --accent-color: #382400;
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  src: url("../fonts/Muller-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MullerBold";
+  src: url("../fonts/Muller-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  src: url("../fonts/Muller-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  color: #020303;
+}
+
+body {
+  font-family: "MullerRegular";
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  padding: 15px 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.logo {
+  margin-right: 250px;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.logo_img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav_link {
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(164, 107, 0);
+  line-height: 1.2;
+}
+
+.nav_link + .nav_link {
+  margin-left: 50px;
+}
+
+.header_wrapper {
+  display: flex;
+}
+
+/* main-section */
+
+.main-section_wrapper {
+  padding: 130px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+  max-width: 625px;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "MullerExtraBold";
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+
+h1 span {
+  display: block;
+  color: var(--primary-color);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1ch;
+}
+
+.feature-item {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.feature-item img {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.feature-item_text {
+}
+
+.feature-item_text span {
+  font-family: "MullerExtraBold";
+  color: var(--primary-color);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 25px 0;
+  text-align: center;
+  width: 240px;
+  font-size: 16px;
+  font-family: "MullerBold";
+  color: var(--accent-color);
+}
+
+.pizza-image {
+  padding-top: 50px;
+}
+
+/* Pizza section */
+.pizza-section {
+  padding: 30px 0 130px;
+}
+
+.pizza-section_title {
+  font-size: 35px;
+  font-family: "MullerBold";
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pizza-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.pizza-card {
+  width: 282px;
+
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+  padding: 25px 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.pizza-card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.pizza-name {
+  font-family: "MullerBold";
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pizza-description {
+  text-align: center;
+  font-size: 14px;
+  font-family: "MullerRegular";
+  color: rgb(24, 26, 26);
+  line-height: 1.286;
+  margin-bottom: 15px;
+}
+
+.pizza-card_button {
+  display: inline-block;
+  width: 240px;
+  background-color: var(--primary-color);
+  padding: 25px 0;
+  text-align: center;
+  font-size: 16px;
+  font-family: "MullerBold";
+  color: var(--accent-color);
+}
+
+/* delivery section */
+
+.delivery-section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.delivery-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.delivery-text {
+  flex: 1 1 28%;
+}
+
+.delivery-text h2 {
+  font-family: "MullerExtraBold";
+  font-size: 35px;
+  color: var(--accent-color);
+  margin-bottom: 70px;
+  color: #5c4e2e;
+}
+
+.delivery-text h2 span {
+  display: block;
+  color: var(--primary-color);
+}
+
+.delivery-text p {
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+
+.delivery-form {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 330px;
+}
+
+.delivery-form input {
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid var(--secondary-color);
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.delivery-form input::placeholder {
+  color: var(--secondary-color);
+}
+
+.delivery-form button {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delivery-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.delivery-image {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  margin-right: -120px;
+}
+
+.delivery-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .delivery-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .delivery-text,
+  .delivery-form,
+  .delivery-image {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+
+  .delivery-text h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-form form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
