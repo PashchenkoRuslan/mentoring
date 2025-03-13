@@ -110,6 +110,7 @@ header {
 
 .text-content {
   max-width: 625px;
+  line-height: 1.222;
 }
 
 h1 {
@@ -255,6 +256,7 @@ h1 span {
 
 .delivery-text h2 {
   font-family: "MullerExtraBold";
+  line-height: 1.286;
   font-size: 35px;
   color: var(--accent-color);
   margin-bottom: 70px;
