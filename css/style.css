@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "MullerRegular";
-  src: url("../fonts/Muller-Regular.otf") format("opentype");
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,7 +15,8 @@
 
 @font-face {
   font-family: "MullerBold";
-  src: url("../fonts/Muller-Bold.otf") format("opentype");
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -22,7 +24,8 @@
 
 @font-face {
   font-family: "MullerExtraBold";
-  src: url("../fonts/Muller-ExtraBold.otf") format("opentype");
+  src: url("../fonts/MullerExtraBold.woff2") format("woff2"),
+    url("../fonts/MullerExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
